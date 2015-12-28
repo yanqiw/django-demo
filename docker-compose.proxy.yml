@@ -1,0 +1,10 @@
+proxy:
+  image: jwilder/nginx-proxy
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock:ro
+  ports:
+    - 80:80
+
+django:
+  environment:
+    - VIRTUAL_HOST=dlit-dev.lemaiquan.com

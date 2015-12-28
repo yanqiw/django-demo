@@ -1,0 +1,6 @@
+django:
+  external_links:
+    - fluent-server
+  log_driver: 'fluentd'
+  log_opt:
+    fluentd-address: "172.17.0.2:24224"

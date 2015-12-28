@@ -1,0 +1,6 @@
+dkgit:
+  image: git-repo-yanqiw
+  volumes:
+   - .:/workspace
+  ports:
+   - "2244:22"
